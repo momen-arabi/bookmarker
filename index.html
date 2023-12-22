@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon" />
+    <title>Bookmarker | Momen Arabi</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JS -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="bg-warning-subtle">
+    <div class="container my-5">
+      <h1 class="text-center text-uppercase p-0 m-0">Bookmarker</h1>
+      <h2 class="text-center text-success fs-4 mb-5">
+        <i class="fa-solid fa-bookmark text-success"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark text-warning"></i>
+      </h2>
+      <form class="my-4">
+        <div class="mb-3">
+          <label for="site-name" class="form-label fw-bold"> <i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+          <div class="input-group position-relative">
+            <input
+              type="text"
+              class="form-control border rounded-1"
+              id="site-name"
+              name="siteName"
+              placeholder="Bookmark Name"
+              aria-describedby="status"
+            />
+            <span class="input-group-text position-absolute end-0 h-100 border-0 bg-transparent" id="name-status"></span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="link" class="form-label fw-bold"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+          <div class="input-group">
+            <input
+              type="url"
+              class="form-control border rounded-1"
+              id="site-link"
+              name="siteLink"
+              placeholder="Website URL"
+              aria-describedby="status"
+            />
+            <span class="input-group-text position-absolute end-0 h-100 border-0 bg-transparent" id="link-status"></span>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn py-2 px-5 d-gird mx-auto text-light" id="add-book">Submit</button>
+        </div>
+      </form>
+      <table class="table table-light text-center mt-5" id="site-tbl">
+        <thead>
+          <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="modal fade" id="error" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5 fw-bold" id="error-title"></h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-body-secondary" id="error-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=PT+Sans+Caption:wght@400;700&family=Righteous&display=swap");
+:root {
+  --green: #198754;
+  --yellow: #ffc107;
+  --orange: #d1512d;
+  --red: #bb4120;
+}
+
+::selection {
+  background-color: var(--yellow);
+}
+
+::placeholder {
+  color: #00000053 !important;
+}
+
+* {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: 4.2rem;
+  color: #352e28;
+}
+
+h2 {
+  letter-spacing: 1.2;
+  font-family: "Righteous", sans-serif;
+  background: -webkit-linear-gradient(left, var(--green), var(--yellow));
+  background: -o-linear-gradient(right, var(--green), var(--yellow));
+  background: -moz-linear-gradient(right, var(--green), var(--yellow));
+  background: linear-gradient(to right, var(--green), var(--yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#add-book {
+  background-color: var(--orange);
+}
+
+#add-book:hover {
+  background-color: var(--red);
+}
+
+.form-control:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+}
+
+.input-group-text {
+  z-index: 100;
+}
+
+.correct-focus:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+.wrong-focus:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 0.25rem rgba(187, 65, 32, 0.25);
+}
+
+.text-correct {
+  color: var(--green);
+}
+
+.text-wrong {
+  color: var(--red);
+}
+
+#error svg,
+#error-title {
+  color: var(--red) !important;
+}
+
+#error-content {
+  font-size: 0.85rem;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 11px;
+  }
+}
