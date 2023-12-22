@@ -84,7 +84,7 @@ function checkName() {
 
 // check if website url is valid
 function checkLink() {
-  var isLinkValid = /^(https:\/\/)(w{3}\.)*(\w+)(\.[a-z]{2,})$|(http:\/\/)(w{3}\.)*(\w+)(\.[a-z]{2,})$/i;
+  var isLinkValid = /^(https:\/\/)(w{3}\.)(\w+)(\.[a-z]{2,})$|(http:\/\/)(w{3}\.)(\w+)(\.[a-z]{2,})$/i;
   if (isLinkValid.test(siteLink.value)) return true;
   else return false;
 }
