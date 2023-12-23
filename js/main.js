@@ -36,6 +36,10 @@ function addSite() {
   siteLink.value = "";
   nameStatus.innerHTML = "";
   linkStatus.innerHTML = "";
+  siteName.classList.remove("correct-focus");
+  siteName.classList.remove("wrong-focus");
+  siteLink.classList.remove("correct-focus");
+  siteLink.classList.remove("wrong-focus");
 
   display(siteList);
 }
